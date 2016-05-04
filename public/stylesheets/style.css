@@ -1,8 +1,98 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.bgColor{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFEFEF,endColorStr=#FFFFFF); /*IE 6 7 8*/ 
+	background: -ms-linear-gradient(top, #EFEFEF,  #FFFFFF);        /* IE 10 */
+	background:-moz-linear-gradient(top,#FFFFFF,#EFEFEF);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#EFEFEF), to(#FFFFFF));/*谷歌*/ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EFEFEF), to(#FFFFFF));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #FFFFFF, #EFEFEF);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #EFEFEF, #FFFFFF);  /*Opera 11.10+*/
+
 }
 
-a {
-  color: #00B7FF;
+.logonCon .container{
+	padding-top: 10px;
+}
+
+.navbar{
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-bottom:0 !important;
+    height: 36px;
+}
+.navbar-nav > li > a{
+	padding-top:8px !important; 
+}
+.navbar {
+	min-height:36px !important;
+}
+
+.navbar ul li  a:hover {
+    /*color: green !important;*/
+    background-color: #F69C55 !important;
+}
+
+#prolist{
+	/*border: 1px solid silver;*/
+}
+
+.list-group-item{
+	    padding: 5px 10px !important;
+}
+#carouselCon{
+	padding-top: 15px;	
+}
+#featuredtitle{
+    border-bottom: 2px solid silver;
+}
+#featureddiv{
+	padding-top: 20px;
+}
+#featureddiv img{
+	display: block;
+	border: 1px solid #FFF;
+	width: 150px;
+	height: 150px;
+}
+#featureddiv img:hover{
+	border: 1px solid #CCC;
+}
+#rightCon{
+	padding: 0px 15px;
+}
+
+#navsearch{
+	padding: 0px;
+    margin: 6px 0px;
+}
+
+#navsearch input{
+	line-height: 24px;
+    height: 24px;
+}
+
+#navsearch button{
+	height: 24px;
+    margin: 0px;
+    padding: 0px 5px;
+}
+
+.footer{
+	border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.footer a{
+    display: inline-block;
+    color: #999;
+}
+
+.footer p{
+	text-align: center;
+    margin: 0px;
 }
