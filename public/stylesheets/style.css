@@ -9,6 +9,23 @@
 
 }
 
+#pt{
+	color: #fff;
+    border-bottom: 10px solid #fff;
+    font-weight: bold;
+    background-color: #AFAFAF;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 70px;
+    line-height: 70px;
+    text-indent: 20px;
+    border-radius: 10px;
+}
+
+#plist{
+	    margin-top: -20px;
+}
 .logonCon .container{
 	padding-top: 10px;
 }
@@ -32,6 +49,7 @@
 .navbar ul li  a:hover {
     /*color: green !important;*/
     background-color: #F69C55 !important;
+    border-radius: 5px;
 }
 
 #prolist{
