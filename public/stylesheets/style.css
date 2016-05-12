@@ -26,6 +26,15 @@
 #plist{
 	    margin-top: -20px;
 }
+#plist .list-group-item:hover {
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: #E0E0E0;
+    cursor: pointer;
+}
+#plist .list-group-item a{
+    text-decoration: none;
+}
 .logonCon .container{
 	padding-top: 10px;
 }
