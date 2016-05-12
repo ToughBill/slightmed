@@ -2,12 +2,31 @@
 	<div id="prolist" class="col-md-3">
 		<div>
 			<h3 id="pt">Products</h3>
-			<!--<div id="plistCon">
-				
-			</div>-->
 			<ul id ="plist" class="list-group">
-	   			<li class="list-group-item"><a href="#">First-aid Packet 1</a></li>
-			   	<li class="list-group-item"><a href="#">First-aid Packet 2</a></li>
+	   			<li class="list-group-item">
+	   				<a href="#">
+	   					First-aid Packet 1
+	   					<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
+	   				</a>
+	   				<ul class="list-group sub">
+	   					<li class="list-group-item"><a href="#">Packet no.1.1</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.1.2</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.1.3</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.1.4</a></li>
+	   				</ul>
+	   			</li>
+			   	<li class="list-group-item">
+			   		<a href="#">
+			   			First-aid Packet 2
+			   			<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
+			   		</a>
+			   		<ul class="list-group sub">
+	   					<li class="list-group-item"><a href="#">Packet no.2.1</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.2.2</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.2.3</a></li>
+	   					<li class="list-group-item"><a href="#">Packet no.2.4</a></li>
+	   				</ul>
+			   	</li>
 			   	<li class="list-group-item"><a href="#">Bandage 1</a></li>
 			   	<li class="list-group-item">
 			      <span class="badge">新</span>
@@ -54,17 +73,29 @@
 		    </div><!-- /.carousel -->
 			</div>
 			<div class="row" id="featureddiv">
-	    		<h4 id="featuredtitle">Featured</h4>
+	    		<h4 id="featuredtitle" class="bgColor">Featured Products</h4>
 	    		<div class="row">
 	    			<div class="col-md-3 col-sm-6">
-	    				<a href="#"><img src="img/product/1.jpg"/></a>
-	    				<a href="#">ISA001</a>
-	    				<p>asfafwf</p>
+	    				<div class="ptCon">
+	    					<div class="imgCon">
+	    						<a href="#"><img src="img/product/1.jpg"/></a>
+	    					</div>
+		    				<div class="infoCon">
+			    				<a href="#">ISA001</a>
+			    				<p>asfafwf</p>
+		    				</div>
+	    				</div>
 	    			</div>
 	    			<div class="col-md-3 col-sm-6">
-	    				<a href="#"><img src="img/product/2.jpg"/></a>
-	    				<a href="#">ISA001</a>
-	    				<p>asfafwf</p>
+	    				<div class="ptCon">
+	    					<div class="imgCon">
+	    						<a href="#"><img src="img/product/2.jpg"/></a>
+	    					</div>
+		    				<div class="infoCon">
+			    				<a href="#">ISA002</a>
+			    				<p>asfafwf</p>
+		    				</div>
+	    				</div>
 	    			</div>
 	    			<div class="col-md-3 col-sm-6">
 	    				<a href="#"><img src="img/product/3.jpg"/></a>
@@ -76,18 +107,18 @@
 	    				<a href="#">ISA001</a>
 	    				<p>asfafwf</p>
 	    			</div>
-	    		</div>
+	    			<div class="col-md-3 col-sm-6">
+	    				<a href="#"><img src="img/product/5.jpg"/></a>
+	    				<a href="#">ISA001</a>
+	    				<p>asfafwf</p>
+	    			</div>
+	    			<div class="col-md-3 col-sm-6">
+	    				<a href="#"><img src="img/product/5.jpg"/></a>
+	    				<a href="#">ISA001</a>
+	    				<p>asfafwf</p>
+	    			</div>
+    			</div>
 	    		<div class="row">
-	    			<div class="col-md-3 col-sm-6">
-	    				<a href="#"><img src="img/product/5.jpg"/></a>
-	    				<a href="#">ISA001</a>
-	    				<p>asfafwf</p>
-	    			</div>
-	    			<div class="col-md-3 col-sm-6">
-	    				<a href="#"><img src="img/product/5.jpg"/></a>
-	    				<a href="#">ISA001</a>
-	    				<p>asfafwf</p>
-	    			</div>
 	    			<div class="col-md-3 col-sm-6">
 	    				<a href="#"><img src="img/product/1.jpg"/></a>
 	    				<a href="#">ISA001</a>
@@ -98,8 +129,6 @@
 	    				<a href="#">ISA001</a>
 	    				<p>asfafwf</p>
 	    			</div>
-    			</div>
-	    		<div class="row">
 	    			<div class="col-md-3 col-sm-6">
 	    				<a href="#"><img src="img/product/3.jpg"/></a>
 	    				<a href="#">ISA001</a>

@@ -6,7 +6,6 @@
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EFEFEF), to(#FFFFFF));      /* Safari 4-5, Chrome 1-9*/
 	background: -webkit-linear-gradient(top, #FFFFFF, #EFEFEF);   /*Safari5.1 Chrome 10+*/
 	background: -o-linear-gradient(top, #EFEFEF, #FFFFFF);  /*Opera 11.10+*/
-
 }
 
 #pt{
@@ -24,7 +23,7 @@
 }
 
 #plist{
-	    margin-top: -20px;
+    margin-top: -20px;
 }
 #plist .list-group-item:hover {
     border: 1px solid silver;
@@ -34,6 +33,17 @@
 }
 #plist .list-group-item a{
     text-decoration: none;
+}
+#plist li .sub{
+	top: 0px;
+ 	display: none;
+}
+#plist li:hover .sub{
+ 	position: absolute;
+/*    left: 267px;*/
+    display: block;
+    z-index: 999;
+    width: 200px;
 }
 .logonCon .container{
 	padding-top: 10px;
@@ -60,19 +70,32 @@
     background-color: #F69C55 !important;
     border-radius: 5px;
 }
+#navbar ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+    margin: 0;
+}
+.navbar .divider-vertical {
+	height: 30px;
+	margin: 3px 9px;
+	border-left: 1px solid #D2D2D2;
+	border-right: 1px solid #ffffff;
+}
 
 #prolist{
 	/*border: 1px solid silver;*/
 }
 
 .list-group-item{
-	    padding: 5px 10px !important;
+    padding: 5px 10px !important;
 }
 #carouselCon{
 	padding-top: 15px;	
 }
 #featuredtitle{
     border-bottom: 2px solid silver;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
 }
 #featureddiv{
 	padding-top: 20px;
@@ -86,10 +109,23 @@
 #featureddiv img:hover{
 	border: 1px solid #CCC;
 }
-#rightCon{
+.ptCon{
+	margin: 10px;
+    padding: 5px 0px;
+    border: 1px solid silver;
+}
+.imCon{
+	width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+.rightCon{
 	padding: 0px 15px;
 }
-
+.infoCon{
+	border-top: 1px solid silver;
+    padding: 3px 10px;
+}
 #navsearch{
 	padding: 0px;
     margin: 6px 0px;
