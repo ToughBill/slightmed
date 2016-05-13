@@ -35,22 +35,24 @@
    	</li>
    	<li class="list-group-item"><a href="#">Bandage 3</a></li>
    	
-   	<% for(var i = 0; i < ptList.length; i++) {%>
-		<li class="list-group-item">
-			<a href="#">
-				<%= ptList[i].category %>
-				<% if(ptList[i].items && ptList[i].items.length > 0) {%>
-					<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
-				<% } %>
-			</a>
-			<% if(ptList[i].items && ptList[i].items.length > 0) {%>
-				<ul class="list-group sub">
-					<% for(var j = 0; j < ptList[i].items.length; j++) {%>
-						<li class="list-group-item"><a href="#"><%= ptList[i].items[j] %></a></li>
+   	<% if(ptList !== undefined) {%>
+	   	<% for(var i = 0; i < ptList.length; i++) {%>
+			<li class="list-group-item">
+				<a href="#">
+					<%= ptList[i].category %>
+					<% if(ptList[i].items && ptList[i].items.length > 0) {%>
+						<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
 					<% } %>
-				</ul>
-			<% } %>
-			
-		</li>
+				</a>
+				<% if(ptList[i].items && ptList[i].items.length > 0) {%>
+					<ul class="list-group sub">
+						<% for(var j = 0; j < ptList[i].items.length; j++) {%>
+							<li class="list-group-item"><a href="#"><%= ptList[i].items[j] %></a></li>
+						<% } %>
+					</ul>
+				<% } %>
+				
+			</li>
+		<% } %>
 	<% } %>
 </ul>

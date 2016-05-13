@@ -4,7 +4,10 @@ var product = require('./product');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.render('index', { layout: 'layout', ptList: product.getProductList()});
+	var ps=product.getProductList();
+	console.log("ps:");
+	console.log(ps);
+	res.render('index', { ptList: ps, layout: 'layout'});
 });
 
 module.exports = router;
