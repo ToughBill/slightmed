@@ -2,12 +2,23 @@
 	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFEFEF,endColorStr=#FFFFFF); /*IE 6 7 8*/ 
 	background: -ms-linear-gradient(top, #EFEFEF,  #FFFFFF);        /* IE 10 */
 	background:-moz-linear-gradient(top,#FFFFFF,#EFEFEF);/*火狐*/ 
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#EFEFEF), to(#FFFFFF));/*谷歌*/ 
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EFEFEF), to(#FFFFFF));      /* Safari 4-5, Chrome 1-9*/
 	background: -webkit-linear-gradient(top, #FFFFFF, #EFEFEF);   /*Safari5.1 Chrome 10+*/
 	background: -o-linear-gradient(top, #EFEFEF, #FFFFFF);  /*Opera 11.10+*/
 }
+.bgColor2{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFEFEF,endColorStr=#FFFFFF); /*IE 6 7 8*/ 
+	background: -ms-linear-gradient(top, #EFEFEF, #FFFFFF);        /* IE 10 */
+	background: -moz-linear-gradient(top, #FFFFFF, #EFEFEF);/*火狐*/ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#EFEFEF), to(#FFFFFF));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #EFEFEF, #FFFFFF);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #EFEFEF, #FFFFFF);  /*Opera 11.10+*/
+}
 
+.container{
+    padding-left: 80px;
+    padding-right: 80px;
+}
 #pt{
 	color: #fff;
     border-bottom: 10px solid #fff;
@@ -89,29 +100,45 @@
     padding: 5px 10px !important;
 }
 #carouselCon{
-	padding-top: 15px;	
+	/*padding-top: 15px;	*/
 }
 #featuredtitle{
     border-bottom: 2px solid silver;
     height: 40px;
     line-height: 40px;
     text-indent: 10px;
+    margin-bottom: 0px;
 }
 #featureddiv{
 	padding-top: 20px;
+}
+#featureddiv .row{
+	margin-top: 10px;
 }
 #featureddiv img{
 	display: block;
 	border: 1px solid #FFF;
 	width: 150px;
 	height: 150px;
+	margin: auto;
 }
 #featureddiv img:hover{
-	border: 1px solid #CCC;
+	/*border: 1px solid #CCC;*/
+}
+
+.fptl{
+	padding-right: 5px;
+}
+.fpt{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.fptr{
+    padding-left: 5px;
 }
 .ptCon{
-	margin: 10px;
-    padding: 5px 0px;
+	/*margin: 10px;
+    padding: 5px 0px;*/
     border: 1px solid silver;
 }
 .imCon{
@@ -119,8 +146,8 @@
     height: 150px;
     margin: 0px auto;
 }
-.rightCon{
-	padding: 0px 15px;
+#rightCon{
+	padding-top: 15px;
 }
 .infoCon{
 	border-top: 1px solid silver;
@@ -158,4 +185,21 @@
 .footer p{
 	text-align: center;
     margin: 0px;
+}
+
+.ptDetail .desct{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid silver;
+    border-bottom: none;
+    text-align: center;
+    background: #EAE9E9;
+}
+.ptDetail .desc{
+	border: 1px solid silver;
+}
+.ptDetail .cont{
+	padding: 0px 10px;
+	padding-top: 5px;
 }

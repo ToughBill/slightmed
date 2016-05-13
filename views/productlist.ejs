@@ -1,0 +1,56 @@
+<ul id ="plist" class="list-group">
+	<li class="list-group-item">
+		<a href="#">
+			First-aid Packet 1
+			<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
+		</a>
+		<ul class="list-group sub">
+			<li class="list-group-item"><a href="#">Packet no.1.1</a></li>
+			<li class="list-group-item"><a href="#">Packet no.1.2</a></li>
+			<li class="list-group-item"><a href="#">Packet no.1.3</a></li>
+			<li class="list-group-item"><a href="#">Packet no.1.4</a></li>
+		</ul>
+	</li>
+   	<li class="list-group-item">
+   		<a href="#">
+   			First-aid Packet 2
+   			<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
+   		</a>
+   		<ul class="list-group sub">
+			<li class="list-group-item"><a href="#">Packet no.2.1</a></li>
+			<li class="list-group-item"><a href="#">Packet no.2.2</a></li>
+			<li class="list-group-item"><a href="#">Packet no.2.3</a></li>
+			<li class="list-group-item"><a href="#">Packet no.2.4</a></li>
+		</ul>
+   	</li>
+   	<li class="list-group-item"><a href="#">Bandage 1</a></li>
+   	<li class="list-group-item">
+      <span class="badge">新</span>
+      <a href="#">Bandage 2</a>
+   	</li>
+   	<li class="list-group-item"><a href="#">First-aid Packet 3</a></li>
+   	<li class="list-group-item">
+      <span class="badge">新</span>
+      	<a href="#">First-aid Packet 4</a>
+   	</li>
+   	<li class="list-group-item"><a href="#">Bandage 3</a></li>
+   	
+   	<% for(var i = 0; i < ptList.length; i++) {%>
+		<li class="list-group-item">
+			<a href="#">
+				<%= ptList[i].category %>
+				<% if(ptList[i].items && ptList[i].items.length > 0) {%>
+					<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span>
+				<% } %>
+			</a>
+			<% if(ptList[i].items && ptList[i].items.length > 0) {%>
+				<ul class="list-group sub">
+					<% for(var j = 0; j < ptList[i].items.length; j++) {%>
+						<li class="list-group-item"><a href="#"><%= ptList[i].items[j] %></a></li>
+					<% } %>
+				</ul>
+			<% } %>
+			
+		</li>
+	<% } %>
+</ul>
