@@ -47,7 +47,7 @@
 				<% if(ptList[i].items && ptList[i].items.length > 0) {%>
 					<ul class="list-group sub">
 						<% for(var j = 0; j < ptList[i].items.length; j++) {%>
-							<li class="list-group-item"><a href="#"><%= ptList[i].items[j] %></a></li>
+							<li class="list-group-item"><a href="/item?id=" + <%= ptList[i].items[j] %> ><%= ptList[i].items[j] %></a></li>
 						<% } %>
 					</ul>
 				<% } %>
