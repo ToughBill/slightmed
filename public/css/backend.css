@@ -1,0 +1,6 @@
+#loginDiv{
+	margin-top: 100px;
+}
+#loginDiv div[class^=col-md]{
+	padding-left: 0px;
+}
