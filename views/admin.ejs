@@ -19,23 +19,20 @@
 				</a>
 			</div>
 		</div>
-  	<div class="container" id="loginDiv">
-				<form action="" method="post" class="form-horizontal" role="form">
-					<div class="form-group">
-						<label class="col-md-3 col-md-offset-2 control-label" for="nameInput">Name：</label>
-						<div class="col-md-3">
-							<input type="text" class="form-control" id="nameInput" placeholder="Please input account number"/>
+  	<div class="container" id="adminDiv">
+				<div class="row">
+					<div class="col-md-3" id="module">
+						<ul id ="mlist" class="list-group">
+							<li class="list-group-item"><a href="#">Company Information</a></li>
+							<li class="list-group-item"><a href="#">Product</a></li>
+						</ul>
+					</div>
+					<div class="col-md-9" id="detail">
+						<div class="container">
+							
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="col-md-3 col-md-offset-2 control-label" for="passwordInput">Password：</label>
-						<div class="col-md-3">
-							<input type="text" class="form-control"  id="passwordInput" placeholder="Please input password"/>
-						</div>
-					</div>
-					<input type="submit" class="btn btn-primary col-md-offset-5" value="Login" style="margin-top:30px;"/>
-				</form>
-		</div>
+				</div>
     </div>
     <footer class="footer">
     	<% include footer.ejs %>

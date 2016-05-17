@@ -3,10 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-	res.render('admin', {layout: false});
+	res.render('login', {layout: false});
 });
 router.post('/', function(req, res, next){
-	console.log(req.body);
+	res.render('admin', {layout: false});
 });
 
 module.exports = router;

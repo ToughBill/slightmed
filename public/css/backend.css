@@ -4,3 +4,9 @@
 #loginDiv div[class^=col-md]{
 	padding-left: 0px;
 }
+
+#adminDiv{
+	padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+}
