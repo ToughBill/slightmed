@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var product = require('./routes/product');
-var admin = require('./routes/admin');
+var login = require('./routes/admin/login');
+var addPt = require('./routes/admin/addProduct');
 
 var app = express();
 
@@ -29,7 +30,8 @@ app.use(partials());
 
 app.use('/users', users);
 app.use('/item', product);
-app.use('/admin/d', admin);
+app.use('/admin/d', login);
+app.use('/admin/addProduct', addPt);
 app.use('/', routes);
 
 

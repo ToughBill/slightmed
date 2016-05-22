@@ -33,7 +33,7 @@ router.get('/', function(req, res, next) {
 	console.log("req: ");
 	console.log(req.query);
 	var qrys = req.query;
-	res.render('product', { layout: 'layout' , ptList: getProductList__()});
+	res.render('product', { layout: 'master' , ptList: getProductList__()});
 });
 
 

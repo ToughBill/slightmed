@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 	var ps=product.getProductList();
 	console.log("ps:");
 	console.log(ps);
-	res.render('index', { ptList: ps, layout: 'layout'});
+	res.render('index', { ptList: ps, layout: 'master'});
 });
 
 module.exports = router;

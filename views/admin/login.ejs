@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>test</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 		<!--<link href="css/bootstrap-responsive.css" rel="stylesheet">-->
-		<link href="../css/style.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../css/jquery.bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/backend.css"/>
+		<link href="../../css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/backend.css"/>
   </head>
   <body>
   	<div class="logonCon bgColor" style="height: 100px;">
 			<div class="container">
 				<a href="#" style="text-decoration: none;">
-					<img src="../img/logo_b.png"/>
+					<img src="../../img/logo_b.png"/>
 					<h3 style="display: inline-block;">Sun Light Medical Company</h3>
 				</a>
 			</div>
@@ -24,13 +24,13 @@
 					<div class="form-group">
 						<label class="col-md-3 col-md-offset-2 control-label" for="nameInput">Name：</label>
 						<div class="col-md-3">
-							<input type="text" class="form-control" id="nameInput" placeholder="Please input account number"/>
+							<input type="text" name="name" class="form-control" id="nameInput" placeholder="Please input account number"/>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 col-md-offset-2 control-label" for="passwordInput">Password：</label>
 						<div class="col-md-3">
-							<input type="text" class="form-control"  id="passwordInput" placeholder="Please input password"/>
+							<input type="password" name="pwd" class="form-control"  id="passwordInput" placeholder="Please input password"/>
 						</div>
 					</div>
 					<input type="submit" class="btn btn-primary col-md-offset-5" value="Login" style="margin-top:30px;"/>
@@ -38,10 +38,10 @@
 		</div>
     </div>
     <footer class="footer">
-    	<% include footer.ejs %>
+    	<% include ../footer.ejs %>
     </footer>
-		<script src="../js/jquery-1.11.3.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/site.js"></script>
+		<script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/site.js"></script>
   </body>
 </html>
