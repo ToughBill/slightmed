@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
 	res.render('admin/login', {layout: false});
 });
 router.post('/', function(req, res, next){
-	var name = req.param("name");
-	var pwd = req.param("pwd");
-	res.redirect('./admin');
+	var name = req.params.name;
+	var pwd = req.params.pwd;
+	res.redirect('/admin/admin');
 });
 
 module.exports = router;

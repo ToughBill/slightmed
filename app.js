@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var product = require('./routes/product');
 var login = require('./routes/admin/login');
-var addPt = require('./routes/admin/addProduct');
+var admin = require('./routes/admin/admin');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(partials());
 app.use('/users', users);
 app.use('/item', product);
 app.use('/admin/d', login);
-app.use('/admin/addProduct', addPt);
+app.use('/admin/admin', admin);
 app.use('/', routes);
 
 

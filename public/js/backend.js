@@ -5,7 +5,7 @@
 		$.ajax({
 			data: {info: data_info},
 			type: "post",
-			url: "/admin/d",
+			url: "/admin/admin",
 			success: ajaxSuccess,
 			error: ajaxError
 		});
