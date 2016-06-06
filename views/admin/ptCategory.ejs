@@ -1,0 +1,27 @@
+<div class="row">
+	<div id="cateTb" class="table-responsive">
+		<table class="table table-hover">
+			<caption>响应式表格布局</caption>
+	        <thead>
+	        	<tr>
+	            	<th>产品分类</th>
+	            	<th>操作</th>
+	         	</tr>
+	      	</thead>
+	      	<tbody>
+	         	<% if(ptCate !== undefined) {%>
+	         		<% for(var i = 0; i < ptCate.length; i++) {%>
+	         			<tr>
+	         				<td><%= ptCate[i].category %></td>
+	         				<td><a>修改</a>&nbsp;<a>删除</a></td>
+	         			</tr>
+	         		<% } %>	
+	         	<% } %>	
+	         	<tr>
+     				<td></td>
+     				<td><a>添加</a></td>
+     			</tr>
+	      	</tbody>
+		</table>
+	</div>
+</div>

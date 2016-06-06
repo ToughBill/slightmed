@@ -16,7 +16,11 @@ router.post('/', function(req, res, next){
 		paramObj = getCompInfo();
 	}
 	else if(tag == "2"){
-		viewName = "ptMngt";
+		viewName = "ptCategory";
+		paramObj = getPtCategory();
+	}
+	else if(tag == "3"){
+		viewName = "addProduct";
 	}
 	if(viewName == ""){
 		res.write("<h4>wrong parameter!</h4>");
@@ -32,6 +36,30 @@ router.post('/', function(req, res, next){
 function getCompInfo(){
 	return {info:"asdfjawefwflkwhfewe"};
 }
-
+function getPtCategory(){
+	var ptCate = 
+		[
+		 {
+			 "id":1,
+			 "category":"Body Bag"
+		},
+		{
+			"category":"Extrication Device",
+			"id":2
+		},
+		{
+			"category":"Fanny Bag",
+			"id":3
+		},
+		{
+			"category":"First Aid Bag",
+			"id":4
+		},
+		{
+			"category":"oxygen bag",
+			"id":5
+		}];
+	return {ptCate: ptCate};
+}
 
 module.exports = router;

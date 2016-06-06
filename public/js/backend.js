@@ -2,13 +2,16 @@
 	$('#adminDiv a').click(function(e){
 		var srcEle = e.srcElement ? e.srcElement : e.target;
 		var data_info = srcEle.dataset.info;
-		$.ajax({
-			data: {info: data_info},
-			type: "post",
-			url: "/admin/admin",
-			success: ajaxSuccess,
-			error: ajaxError
-		});
+		if(data_info !== undefined){
+			$.ajax({
+				data: {info: data_info},
+				type: "post",
+				url: "/admin/admin",
+				success: ajaxSuccess,
+				error: ajaxError
+			});
+		}
+		
 	});
 })();
 
