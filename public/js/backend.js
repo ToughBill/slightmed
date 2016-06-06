@@ -14,6 +14,7 @@
 
 function ajaxSuccess(data){
 	console.log(data);
+	$('#detail').html(data);
 }
 function ajaxError(data){
 	console.log(data);
