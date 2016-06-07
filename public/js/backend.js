@@ -1,10 +1,11 @@
 (function() {
 	$('#adminDiv a').click(function(e){
 		var srcEle = e.srcElement ? e.srcElement : e.target;
-		var data_info = srcEle.dataset.info;
-		if(data_info !== undefined){
+		var data_m = srcEle.dataset.m;
+		var data_c = srcEle.dataset.c;
+		if(data_m !== undefined){
 			$.ajax({
-				data: {info: data_info},
+				data: {m: data_m, c: data_c},
 				type: "post",
 				url: "/admin/admin",
 				success: ajaxSuccess,

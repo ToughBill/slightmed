@@ -1,3 +1,51 @@
 <div class="row">
-	
+	<h4>添加新产品:</h4>
+	<form action="" method="post" class="form-horizontal" role="form">
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="ptCtgry">产品种类:</label>
+			<div class="col-md-3">
+				<select name="ptCtgry" class="form-control">
+					<option value="1">Body Bag</option>
+					<option value="2">Extrication Device</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="ptId">产品编号:</label>
+			<div class="col-md-9">
+				<input type="text" name="ctgrpId" class="form-control ptIdSty_inline" readonly value="asd"/>
+				<select name="" class="form-control ptIdSty_inline">
+					<option value="1">UIP</option>
+					<option value="2">UIO</option>
+				</select>
+				<input type="text" name="ptId" class="form-control ptIdSty_inline"  id="ptId"/>
+				<br/>
+				<label class="control-label ptIdSty_inline" style="font-weight: normal;text-align: left;margin-top: 5px;">最终编号:</label>
+				<input type="text" name="fptId" class="form-control ptIdSty_inline" readonly value="" style="width: 204px;margin-top: 5px;"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label">产品属性:</label>
+			<div class="col-md-6">
+				<table class="table table-hover" id="ptAttr">
+				<tr><th>属性标题</th><th>属性值</th></tr>
+				<tr><td>颜色</td><td>绿色</td></tr>
+			</table>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="ptDesc">产品描述：</label>
+			<div class="col-md-9">
+				<textarea class="form-control" name="ptDesc">fawefawefqweffwetrtjtfry</textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label">产品图片:</label>
+			<div class="col-md-9">
+				<button class="btn btn-default">+</button>
+			</div>
+		</div>
+		<input type="submit" class="btn btn-primary col-md-offset-5" value="提交" style="margin-top:30px;"/>
+		<input type="reset" class="btn btn-primary col-md-offset-1" value="重置" style="margin-top:30px;"/>
+	</form>
 </div>

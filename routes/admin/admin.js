@@ -9,32 +9,43 @@ router.get('/', function(req, res, next) {
 	res.render('admin/admin', {layout: false});
 });
 router.post('/', function(req, res, next){
-	var tag = req.param("info", "-1");
-	var viewName = "", paramObj = {};
-	if(tag == "1"){
-		viewName = "compInfo";
-		paramObj = getCompInfo();
+	var module = req.param("m", "-1");
+	if(module == "1"){
+		handleCompanyInfoManagement(req, res);
 	}
-	else if(tag == "2"){
+	else if(module == "2"){
+		handleProductManagement(req, res);
+	}
+	else if(module == "-1"){
+		res.write("<h4>wrong parameter!</h4>");
+		res.end();
+	}
+	
+	//res.render('admin/admin', {layout: false});
+});
+
+function handleCompanyInfoManagement(req, res){
+	var viewName = "compInfo", paramObj = {info:"asdfjawefwflkwhfewe"};
+	var str = fs.readFileSync(__dirname + "/../../views/admin/" + viewName + '.ejs', 'utf8');
+	var ret = ejs.render(str, paramObj);
+	res.write(ret);
+	res.end();
+}
+
+function handleProductManagement(req, res){
+	var viewName = "", paramObj = {};
+	var category = req.param("c", "-1");
+	if(category == "1"){
 		viewName = "ptCategory";
 		paramObj = getPtCategory();
 	}
-	else if(tag == "3"){
+	else if(category == "2"){
 		viewName = "addProduct";
-	}
-	if(viewName == ""){
-		res.write("<h4>wrong parameter!</h4>");
-		res.end();
 	}
 	var str = fs.readFileSync(__dirname + "/../../views/admin/" + viewName + '.ejs', 'utf8');
 	var ret = ejs.render(str, paramObj);
 	res.write(ret);
 	res.end();
-	//res.render('admin/admin', {layout: false});
-});
-
-function getCompInfo(){
-	return {info:"asdfjawefwflkwhfewe"};
 }
 function getPtCategory(){
 	var ptCate = 

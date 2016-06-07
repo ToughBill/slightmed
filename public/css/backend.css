@@ -122,3 +122,11 @@
 #cateTb a{
 	cursor: pointer;
 }
+
+.ptIdSty_inline{
+	width: 100px;
+	display: inline-block;
+}
+#ptAttr{
+	font-weight: 100;
+}
