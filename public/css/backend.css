@@ -130,3 +130,12 @@
 #ptAttr{
 	font-weight: 100;
 }
+
+.editor-text{
+	width: calc(100% - 8px) !important;
+	height: 100% !important;
+	margin: 0px !important;
+}
+.slick-cell.active.editable{
+	padding:0px !important;
+}

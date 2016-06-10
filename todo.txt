@@ -1,0 +1,15 @@
+1, Category table:
+{
+	id,name,desc, prefix
+}
+Product table:
+{
+	id, name, fId, desc, caterogy, isfeatured, img, 
+}
+Company table:
+{
+	introduction
+}
+2, every catetory can define some prefixes. 
+3, product id struction: category prefix[optional] + user defined string. the final string must be unique.
+4,安装mongodb：npm install --save mongodb

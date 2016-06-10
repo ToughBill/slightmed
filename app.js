@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var product = require('./routes/product');
 var login = require('./routes/admin/login');
 var admin = require('./routes/admin/admin');
+var category = require('./routes/admin/category');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use('/users', users);
 app.use('/item', product);
 app.use('/admin/d', login);
 app.use('/admin/admin', admin);
+app.use('/admin/category', category);
 app.use('/', routes);
 
 

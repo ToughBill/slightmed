@@ -34,6 +34,7 @@ function handleCompanyInfoManagement(req, res){
 
 function handleProductManagement(req, res){
 	var viewName = "", paramObj = {};
+	var module = req.param("m", "-1");
 	var category = req.param("c", "-1");
 	if(category == "1"){
 		viewName = "ptCategory";
@@ -44,7 +45,7 @@ function handleProductManagement(req, res){
 	}
 	var str = fs.readFileSync(__dirname + "/../../views/admin/" + viewName + '.ejs', 'utf8');
 	var ret = ejs.render(str, paramObj);
-	res.write(ret);
+	res.write(JSON.stringify({ac:buildActionStr(module, category) ,temp:ret, data:paramObj}));
 	res.end();
 }
 function getPtCategory(){
@@ -52,25 +53,32 @@ function getPtCategory(){
 		[
 		 {
 			 "id":1,
-			 "category":"Body Bag"
+			 "category":"Body Bag",
+			 "code":"BBG"
 		},
 		{
 			"category":"Extrication Device",
-			"id":2
+			"id":2,
+			"code":"EDE"
 		},
 		{
 			"category":"Fanny Bag",
-			"id":3
+			"id":3,
+			"code":"FBG"
 		},
 		{
 			"category":"First Aid Bag",
-			"id":4
+			"id":4,
+			"code":"FAB"
 		},
 		{
 			"category":"oxygen bag",
-			"id":5
+			"id":5,
+			"code":"OBB"
 		}];
 	return {ptCate: ptCate};
 }
-
+function buildActionStr(module, category){
+	return "m" + module + ",c" + category;
+}
 module.exports = router;
