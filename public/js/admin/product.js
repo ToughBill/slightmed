@@ -28,6 +28,7 @@ var Product = (function(){
 	
 	function handleSubmitClick(e){
 		var grid = $("#ptCon").data("slickgrid");
+		grid.wrapperOptions.data.splice(grid.wrapperOptions.data.length - 1, 1);
 		$.ajax({
 			data: {ac:"1", data:JSON.stringify(grid.wrapperOptions.data)},
 			type: "post",

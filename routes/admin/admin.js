@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var ejs = require('ejs');
 var fs = require('fs');
+var categoryObject = require('./../bo/categoryObject');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -49,7 +50,7 @@ function handleProductManagement(req, res){
 	res.end();
 }
 function getPtCategory(){
-	var ptCate = 
+	/*var ptCate = 
 		[
 		 {
 			 "id":1,
@@ -75,7 +76,8 @@ function getPtCategory(){
 			"category":"oxygen bag",
 			"id":5,
 			"code":"OBB"
-		}];
+		}];*/
+	var ptCate = categoryObject.getAllCategories();
 	return {ptCate: ptCate};
 }
 function buildActionStr(module, category){
