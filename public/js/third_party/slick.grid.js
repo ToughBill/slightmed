@@ -1415,8 +1415,10 @@ if (typeof Slick === "undefined") {
 
       numVisibleRows = Math.ceil(viewportH / options.rowHeight);
       viewportW = parseFloat($.css($container[0], "width", true));
-      $viewport.height(viewportH);
-
+      //$viewport.height(viewportH);
+      if (!options.autoHeight) {
+        $viewport.height(viewportH);
+      }
       if (options.forceFitColumns) {
         autosizeColumns();
       }

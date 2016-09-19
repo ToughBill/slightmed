@@ -50,7 +50,7 @@
  */
 .grid {
   height: 380px;
-  width: 800px;
+  /*width: 800px;*/
   position: relative;
   border-bottom: 1px solid #dddddd;
 }
